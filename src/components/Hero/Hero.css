@@ -1,0 +1,37 @@
+.hero-section {
+    background-color: #f8f9fa; /* Light grey background; feel free to change */
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+  
+.app-display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .app-item {
+    width: 45%;  /* Adjust based on your layout preference */
+    position: relative;
+  }
+  
+  .app-logo {
+    max-width: 80px;  /* Adjust as per your logo's size */
+    display: block;
+    margin: 0 auto 20px;  /* Centers the logo and gives space below */
+  }
+  
+  .app-screenshot {
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Optional shadow for depth */
+  }

@@ -1,15 +1,23 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AppDetailPage from './pages/AppDetailPage';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import AppPage from "./pages/AppPage";
+import './App.css';
+import NavbarComponent from './components/NavbarComponent';
+import Hero from './components/Hero';
 
 function App() {
+  useEffect(() => {
+    document.title = "Apps by Tom";
+  }, []);
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/app/:appId" component={AppDetailPage} />
-      </Switch>
-    </Router>
+    <div className="App">
+      <NavbarComponent />
+      <Hero />
+      {/* Rest of your components */}
+    </div>
   );
 }
 
