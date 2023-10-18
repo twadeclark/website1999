@@ -1,23 +1,24 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import AppPage from "./pages/AppPage";
-import './App.css';
-import NavbarComponent from './components/NavbarComponent';
-import Hero from './components/Hero';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import AppsPage from './components/AppsPage';
+import BrowserGamePage from './components/BrowserGamePage';
+import AboutPage from './components/AboutPage';
 
 function App() {
-  useEffect(() => {
-    document.title = "Apps by Tom";
-  }, []);
-
   return (
-    <div className="App">
-      <NavbarComponent />
-      <Hero />
-      {/* Rest of your components */}
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/apps" element={<AppsPage />} />
+          <Route path="/browser-game" element={<BrowserGamePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* Add routes for other pages as you create them */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
