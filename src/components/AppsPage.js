@@ -1,21 +1,22 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button, Card, Row, Col } from 'react-bootstrap';
 import CustomNavbar from './CustomNavbar';
+import timesTablesScreenshot1 from '../assets/timesTablesScreenshot1.png';
 
 function AppsPage() {
   return (
     <>
       {/* Navbar (same as HomePage for consistency) */}
       <CustomNavbar />
-      
+
       {/* Main Apps Section */}
       <Container className="my-5">
-        <h2 className="mb-4">Our Mobile Apps</h2>
+        <h2 className="mb-4">Mobile Apps</h2>
 
         {/* First Mobile App Details */}
         <Row className="mb-5">
           <Col md={6}>
-            <img src="path-to-your-first-app-screenshot.jpg" alt="First App" className="img-fluid" />
+            <img src={timesTablesScreenshot1} alt="Times the Times Tables" width={600} />
           </Col>
           <Col md={6}>
             <h3>First App's Name</h3>

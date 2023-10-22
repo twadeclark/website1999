@@ -1,0 +1,37 @@
+/* global.css */
+
+.bg-black {
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+}
+
+.text-red {
+    color: red;
+}
+
+/* Navbar styling, if needed. Ensure the text is white to be visible against the black background */
+.navbar {
+    background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-logo {
+    height: 40px;    /* Adjust based on your preference */
+    width: auto;     /* Keeps the aspect ratio */
+    margin-right: 10px;  /* Adds some space between the logo and any other navbar elements */
+}
+
+/* Any additional global styles you may want */
+
+.app-icon {
+    width: 100px;  /* or any desired width */
+    height: auto;  /* maintains the aspect ratio */
+}

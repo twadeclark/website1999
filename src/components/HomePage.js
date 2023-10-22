@@ -5,6 +5,7 @@ import CustomNavbar from './CustomNavbar';
 function HomePage() {
   return (
     <>
+    <div className="homepage-gradient-bg">
       {/* Navbar */}
       <CustomNavbar />
 
@@ -43,7 +44,8 @@ function HomePage() {
         <p>Your brief about section or mission statement here.</p>
         {/* Add social media links and other footer content */}
       </footer>
-    </>
+      </div>
+      </>
   );
 }
 
