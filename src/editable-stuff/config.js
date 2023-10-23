@@ -3,6 +3,17 @@ const navBar = {
     show: true,
   };
   
+
+  // tagline rotation
+  const messages = [
+    "Tech-driven change-maker at heart, bridging dreams and reality with technology.",
+    "Empowering innovation with a touch of code.",
+    "Transforming ideas into digital reality.",
+    "Coding dreams into existence.",
+    // ... add more taglines as you wish
+  ];
+  
+
   // Main Body SECTION
   const mainBody = {
     gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
@@ -10,6 +21,7 @@ const navBar = {
     middleName: "W.",
     lastName: "Clark",
     message: " Tech-driven change-maker at heart, bridging dreams and reality with technology. ",
+    username: "twadeclark",
     icons: [
     ],
   };
