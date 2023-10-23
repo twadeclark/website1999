@@ -3,16 +3,34 @@ const navBar = {
     show: true,
   };
   
-
   // tagline rotation
   const messages = [
-    "Tech-driven change-maker at heart, bridging dreams and reality with technology.",
+    "Tech-driven change-maker at heart.", 
+    "Bridging dreams and reality with technology.",
     "Empowering innovation with a touch of code.",
     "Transforming ideas into digital reality.",
     "Coding dreams into existence.",
-    // ... add more taglines as you wish
+    "Igniting change with every tech breakthrough.",
+    "Where innovation meets impact, that's my tech journey.",
+    "Crafting a digital legacy for a brighter tomorrow.",
+    "Technology's promise, my passion.",
+    "Empowering voices and visions with tech solutions.",
+    "Revolutionizing perspectives, one code at a time.",
+    "Dreaming digitally, impacting globally.",
+    "Where technology and vision converge, I thrive.",
+    "Championing a future shaped by technology.",
+    "Turning the wheels of change with digital prowess.",
+    "Molding the future, byte by byte.",
+    "Tech enthusiast. World changer. Future builder.",
+    "Amplifying aspirations through technological marvels.",
+    "Leading with tech, impacting with purpose.",
+    "Coding dreams into realities for a better world.",
+    "Pushing boundaries, powering progress with tech.",
+    "In the heart of innovation, shaping the tech frontier.",
+    "Bridging divides, crafting futures with digital tools.",
+    "At the intersection of technology and transformation.",
+    "Digitally driven, globally inspired."
   ];
-  
 
   // Main Body SECTION
   const mainBody = {
@@ -20,7 +38,8 @@ const navBar = {
     firstName: "Tom",
     middleName: "W.",
     lastName: "Clark",
-    message: " Tech-driven change-maker at heart, bridging dreams and reality with technology. ",
+    message: messages[0], // set the initial message
+    messages: messages, // add the array to the mainBody object
     username: "twadeclark",
     icons: [
     ],
@@ -45,7 +64,7 @@ const navBar = {
     imageLink: require("../editable-stuff/wisetomowl.png"),
     imageSize: 375,
     message:
-      "My name is Tom Clark. I've been a print magazine publisher, a salesman both in person and cold calling, a mortgage broker, account manager. But my true love is software devlopment. Aside from my wife and kids, that is. ",
+      "My name is Tom Clark. I live in Vancouver, Washington. I've been a print magazine publisher, salesman both in person and cold calling, mortgage broker, account manager. But my true love is software devlopment. Aside from my wife and kids, that is. ",
     resume: "https://docs.google.com/",
   };
   

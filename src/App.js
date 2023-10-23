@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
   navBar,
@@ -23,13 +23,31 @@ import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
 
+function getRandomMessage() {
+  const randomIndex = Math.floor(Math.random() * mainBody.messages.length);
+  return mainBody.messages[randomIndex];
+}
+
 const Home = React.forwardRef((props, ref) => {
+  const [currentMessage, setCurrentMessage] = useState(getRandomMessage());
+
+  // useEffect(() => {
+  //   let messageIndex = 0;
+
+  //   const interval = setInterval(() => {
+  //     messageIndex = (messageIndex + 1) % mainBody.messages.length; // loop back to the start when reaching the end
+  //     setCurrentMessage(mainBody.messages[messageIndex]);
+  //   }, 1000); // change every 10 seconds. Adjust as needed.
+
+  //   return () => clearInterval(interval); // clear the interval when the component unmounts
+  // }, []);
+
   return (
     <>
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
+        message={currentMessage}
         icons={mainBody.icons}
         ref={ref}
       />
