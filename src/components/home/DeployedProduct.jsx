@@ -5,26 +5,27 @@ import Row from "react-bootstrap/Row";
 import DeployedProductCard from "./DeployedProductCard";
 
 import juliaZoneIcon from "../../assets/juliaZoneIcon.jpg";
-import juliaZoneScreenshot from "../../assets/juliaZoneScreenshot1.png";
+import juliaZoneScreenshot1 from "../../assets/juliaZoneScreenshot1.png";
+import juliaZoneScreenshot2 from "../../assets/juliaZoneScreenshot2.png";
 import timesTableIcon from "../../assets/timesTableIcon.png";
-import timesTablesScreenshot from "../../assets/timesTablesScreenshot1.png";
+import timesTablesScreenshot1 from "../../assets/timesTablesScreenshot1.png";
+import timesTablesScreenshot2 from "../../assets/timesTablesScreenshot2.png";
 
 // Dummy data structure for your local products.
 const localProducts = [
   {
-    name: "The Julia Zone",
-    description: "White noise generator for a good night's sleep.",
-    logo: juliaZoneIcon, 
-    screenshot: juliaZoneScreenshot,
-    // ... any other product-specific details you have
-  },
-  // ... add more products as needed
-  {
     name: "Times the Times Tables",
     description: "Learn your times tables.",
     logo: timesTableIcon,
-    screenshot: timesTablesScreenshot,
-    // ... any other product-specific details you have
+    screenshot1: timesTablesScreenshot1,
+    screenshot2: timesTablesScreenshot2,
+  },
+  {
+    name: "The Julia Zone",
+    description: "White noise generator for a good night's sleep.",
+    logo: juliaZoneIcon, 
+    screenshot1: juliaZoneScreenshot1,
+    screenshot2: juliaZoneScreenshot2,
   },
 ];
 
