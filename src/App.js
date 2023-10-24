@@ -5,6 +5,7 @@ import {
   mainBody,
   about,
   repos,
+  deployedProduct,
   leadership,
   skills,
   getInTouch,
@@ -13,6 +14,7 @@ import {
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
+import DeployedProduct from "./components/home/DeployedProduct.jsx";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
@@ -71,6 +73,11 @@ const Home = React.forwardRef((props, ref) => {
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
+        />
+      )}
+      {deployedProduct.show && (
+        <DeployedProduct
+          heading={deployedProduct.heading}
         />
       )}
       {leadership.show && (

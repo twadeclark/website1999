@@ -74,13 +74,19 @@ const navBar = {
   // If you want to display specfic projects, add the repository names,
   //      i.e ["repository-1", "repo-2"]
   const repos = {
-    show: true,
+    show: false,
     heading: "Recent Projects",
     gitHubUsername: "twadeclark", //i.e."johnDoe12Gh"
     reposLength: 4,
     specificRepos: [],
   };
-  
+
+  // Deployed Products
+  const deployedProduct = {
+    show: true,
+    heading: "Deployed Products",
+  }
+
   // Leadership SECTION
   const leadership = {
     show: false,
@@ -107,7 +113,7 @@ const navBar = {
   
   // SKILLS SECTION
   const skills = {
-    show: true,
+    show: false,
     heading: "Skills",
     hardSkills: [
       { name: "Python", value: 90 },
@@ -136,7 +142,7 @@ const navBar = {
     show: true,
     heading: "Get In Touch",
     message:
-      "I'm currently looking for full-time Software Engineering or Machine Learning opportunity. ",
+      "I'm currently looking for full-time Software Engineering or Machine Learning opportunity. email",
     email: "twadeclark@gmail.com",
   };
   
@@ -162,4 +168,4 @@ const navBar = {
   //   show: false,
   // };
   
-  export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+  export { navBar, mainBody, about, repos, deployedProduct, skills, leadership, getInTouch, experiences };
