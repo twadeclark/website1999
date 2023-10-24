@@ -7,9 +7,12 @@ import DeployedProductCard from "./DeployedProductCard";
 import juliaZoneIcon from "../../assets/juliaZoneIcon.jpg";
 import juliaZoneScreenshot1 from "../../assets/juliaZoneScreenshot1.png";
 import juliaZoneScreenshot2 from "../../assets/juliaZoneScreenshot2.png";
+// import juliaZonePrivacyPolicy from "/TheJuliaZonePrivacyPolicy.html";
+
 import timesTableIcon from "../../assets/timesTableIcon.png";
 import timesTablesScreenshot1 from "../../assets/timesTablesScreenshot1.png";
 import timesTablesScreenshot2 from "../../assets/timesTablesScreenshot2.png";
+// import timesTablesPrivacyPolicy from "/TimestheTimesTablesPrivacyPolicy.html";
 
 // Dummy data structure for your local products.
 const localProducts = [
@@ -19,6 +22,7 @@ const localProducts = [
     logo: timesTableIcon,
     screenshot1: timesTablesScreenshot1,
     screenshot2: timesTablesScreenshot2,
+    privacyPolicyLink: "/TimestheTimesTablesPrivacyPolicy.txt",
   },
   {
     name: "The Julia Zone",
@@ -26,6 +30,7 @@ const localProducts = [
     logo: juliaZoneIcon, 
     screenshot1: juliaZoneScreenshot1,
     screenshot2: juliaZoneScreenshot2,
+    privacyPolicyLink: "/TheJuliaZonePrivacyPolicy.txt",
   },
 ];
 

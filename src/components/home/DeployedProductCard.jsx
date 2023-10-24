@@ -10,25 +10,8 @@ const DeployedProductCard = ({ value }) => {
     logo,
     screenshot1,
     screenshot2,
-    // ... add other attributes as per your requirements
+    privacyPolicyLink,
   } = value;
-
-//   return (
-//     <Col md={6}>
-//       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-//         {/* <Card.Img variant="top" src={screenshot || logo || <Skeleton />} /> */}
-//         <Card.Img variant="top" src={logo || <Skeleton />} style={{ width: '100px' }} />
-//         <Card.Body>
-//           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-//           <Card.Text>{description || <Skeleton count={3} />} </Card.Text>
-//           <Card.Img variant="top" src={screenshot1 || <Skeleton />} style={{ width: '200px' }} />
-//           <Card.Img variant="top" src={screenshot2 || <Skeleton />} style={{ width: '200px' }} />
-//           {/* You can add more product-specific details here as per your requirements */}
-//         </Card.Body>
-//       </Card>
-//     </Col>
-//   );
-// };
 
 return (
   <Col md={6}>
@@ -48,6 +31,9 @@ return (
         <div>
             <Card.Title as="h5">{name}</Card.Title>
             <Card.Text>{description}</Card.Text>
+            <a href={privacyPolicyLink} target="_blank" rel="noopener noreferrer" className="mt-2">
+                    Privacy Policy
+            </a>
         </div>
     </div>
     <div className="d-flex justify-content-between"> {/* Flex container for side-by-side images */}
