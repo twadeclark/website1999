@@ -1,0 +1,36 @@
+.app-icon {
+    width: 160px;
+    height: auto;
+}
+
+a.playstore-link {
+    display: inline-block;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px;
+    transition: background-color 0.3s;
+}
+
+a.playstore-link:hover {
+    background-color: #f7f7f7;
+}
+
+.github-link {
+    display: inline-block;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 11px;
+    transition: background-color 0.3s;
+}
+
+.github-link:hover {
+    background-color: #f7f7f7;
+}
+
+.github-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}

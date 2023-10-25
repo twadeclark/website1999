@@ -30,21 +30,3 @@
 }
 
 /* Any additional global styles you may want */
-
-.app-icon {
-    width: 100px;  /* or any desired width */
-    height: auto;  /* maintains the aspect ratio */
-}
-
-a.playstore-link {
-    display: inline-block;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-a.playstore-link:hover {
-    background-color: #f7f7f7;
-}

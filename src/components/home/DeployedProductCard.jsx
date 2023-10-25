@@ -2,6 +2,8 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
+import './DeployedProductCard.css';
+
 
 const DeployedProductCard = ({ value }) => {
   const {
@@ -31,9 +33,19 @@ return (
         <div>
             <Card.Title as="h5">{name}</Card.Title>
             <Card.Text>{description}</Card.Text>
-            <a href={privacyPolicyLink} target="_blank" rel="noopener noreferrer" className="mt-2">
-                    Privacy Policy
-            </a>
+
+            {value.playStoreLink && (
+                <a href={value.playStoreLink} target="_blank" rel="noopener noreferrer" className="playstore-link">
+                    <img src="/assets/google-play-badge.png" alt="Get it on Google Play" className="app-icon" />
+                </a>
+            )}
+
+            {value.githubSourceLink && (
+                <a href={value.githubSourceLink} target="_blank" rel="noopener noreferrer" className="github-link">
+                    <img src="/assets/github-mark.png" alt="GitHub Logo" className="github-icon" />
+                    View on GitHub
+                </a>
+            )}
         </div>
     </div>
     <div className="d-flex justify-content-between"> {/* Flex container for side-by-side images */}
@@ -53,6 +65,13 @@ return (
                 marginLeft: '10px' 
             }} 
         />
+    </div>
+    <div>
+        {privacyPolicyLink && (
+            <a href={privacyPolicyLink} target="_blank" rel="noopener noreferrer" className="mt-2">
+                Privacy Policy
+            </a>
+        )}
     </div>
     </Card.Body>
 

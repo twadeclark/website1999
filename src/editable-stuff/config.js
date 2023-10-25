@@ -95,6 +95,8 @@ const navBar = {
         screenshot1: "/assets/timesTablesScreenshot1.png",
         screenshot2: "/assets/timesTablesScreenshot2.png",
         privacyPolicyLink: "/TimestheTimesTablesPrivacyPolicy.txt",
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.twadeclark.timesthetimestables",
+        githubSourceLink: "https://github.com/twadeclark/TimesTheTimesTables",
       },
       {
         name: "The Julia Zone",
@@ -103,6 +105,8 @@ const navBar = {
         screenshot1: "/assets/juliaZoneScreenshot1.png",
         screenshot2: "/assets/juliaZoneScreenshot2.png",
         privacyPolicyLink: "/TheJuliaZonePrivacyPolicy.txt",
+        playStoreLink: "",
+        githubSourceLink: "https://github.com/twadeclark/TheJuliaZone",
       },
     ],
   }
