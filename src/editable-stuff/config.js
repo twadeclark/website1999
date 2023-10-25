@@ -81,11 +81,32 @@ const navBar = {
     specificRepos: [],
   };
 
+
   // Deployed Products
   const deployedProduct = {
     show: true,
     heading: "Deployed Products",
+
+    localProducts: [
+      {
+        name: "Times the Times Tables",
+        description: "Learn your times tables. Compete with friends!",
+        logo: "/assets/timesTableIcon.png",
+        screenshot1: "/assets/timesTablesScreenshot1.png",
+        screenshot2: "/assets/timesTablesScreenshot2.png",
+        privacyPolicyLink: "/TimestheTimesTablesPrivacyPolicy.txt",
+      },
+      {
+        name: "The Julia Zone",
+        description: "White noise generator for a good night's sleep.",
+        logo: "/assets/juliaZoneIcon.jpg", 
+        screenshot1: "/assets/juliaZoneScreenshot1.png",
+        screenshot2: "/assets/juliaZoneScreenshot2.png",
+        privacyPolicyLink: "/TheJuliaZonePrivacyPolicy.txt",
+      },
+    ],
   }
+
 
   // Leadership SECTION
   const leadership = {
@@ -113,27 +134,28 @@ const navBar = {
   
   // SKILLS SECTION
   const skills = {
-    show: false,
+    show: true,
     heading: "Skills",
     hardSkills: [
-      { name: "Python", value: 90 },
-      { name: "SQL", value: 75 },
-      { name: "Data Structures", value: 85 },
-      { name: "C/C++", value: 65 },
-      { name: "JavaScript", value: 90 },
-      { name: "React", value: 65 },
-      { name: "HTML/CSS", value: 55 },
-      { name: "C#", value: 80 },
+      { name: "C# / .NET (Visual Studio)", value: 90 },
+      { name: "Java (IntelliJ)", value: 85 },
+      { name: "Mobile Apps (Android Studio)", value: 90 },
+      { name: "MS SQL (SSMS)", value: 85 },
+      { name: "PHP (Netbeans, Xampp)", value: 90 },
+      { name: "JavaScript / React (VS Code)", value: 95 },
+      { name: "Source Control (github, TF)", value: 85 },
+      { name: "MYSQL / Apache", value: 80 },
+      { name: "PERL (sharpened stick)", value: 85 },
     ],
     softSkills: [
-      { name: "Goal-Oriented", value: 80 },
+      { name: "Goal-Oriented", value: 100 },
       { name: "Collaboration", value: 90 },
-      { name: "Positivity", value: 75 },
+      { name: "Problem Solving", value: 100 },
+      { name: "Positivity", value: 95 },
       { name: "Adaptability", value: 85 },
-      { name: "Problem Solving", value: 75 },
-      { name: "Empathy", value: 90 },
-      { name: "Organization", value: 70 },
-      { name: "Creativity", value: 90 },
+      { name: "Creativity", value: 100 },
+      { name: "Empathy", value: 80 },
+      { name: "Organization", value: 95 },
     ],
   };
   

@@ -76,9 +76,10 @@ const Home = React.forwardRef((props, ref) => {
         />
       )}
       {deployedProduct.show && (
-        <DeployedProduct
-          heading={deployedProduct.heading}
-        />
+          <DeployedProduct
+              heading={deployedProduct.heading}
+              localProducts={deployedProduct.localProducts}
+          />
       )}
       {leadership.show && (
         <Leadership
