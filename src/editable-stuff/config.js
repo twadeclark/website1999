@@ -105,7 +105,7 @@ const navBar = {
         screenshot1: "/assets/juliaZoneScreenshot1.png",
         screenshot2: "/assets/juliaZoneScreenshot2.png",
         privacyPolicyLink: "/TheJuliaZonePrivacyPolicy.txt",
-        playStoreLink: "",
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.twadeclark.thejuliazone",
         githubSourceLink: "https://github.com/twadeclark/TheJuliaZone",
       },
     ],
