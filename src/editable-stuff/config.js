@@ -56,7 +56,6 @@ const navBar = {
   //      i.e: profilePictureLink: "",
   // For Resume either provide link to your resume or import from "editable-stuff" directory
   //     i.e resume: require("../editable-stuff/resume.pdf"),
-  //         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
   
   const about = {
     show: true,
@@ -65,7 +64,7 @@ const navBar = {
     imageSize: 375,
     message:
       "My name is Tom Clark. I live in Vancouver, Washington. I've been a print magazine publisher, salesman both in person and cold calling, mortgage broker, account manager. But my true love is software devlopment. Aside from my wife and kids, that is. ",
-    resume: "https://docs.google.com/",
+    resume: "http://twadeclark.com/",
   };
   
   // PROJECTS SECTION
@@ -107,6 +106,30 @@ const navBar = {
         privacyPolicyLink: "/TheJuliaZonePrivacyPolicy.txt",
         playStoreLink: "https://play.google.com/store/apps/details?id=com.twadeclark.thejuliazone",
         githubSourceLink: "https://github.com/twadeclark/TheJuliaZone",
+      },
+      {
+        name: "Website 1999",
+        description: "You're looking at it now. Customizable personal website built with React.",
+        logo: "/assets/website1999_logo_white_small.png",
+        // screenshot1: "",
+        // screenshot2: "",
+        // privacyPolicyLink: "",
+        // playStoreLink: "",
+        githubSourceLink: "https://github.com/twadeclark/website1999",
+        shortLogo: "/assets/wisetomowl.png",
+        shortLogoLink: "http://twadeclark.com",
+      },
+      {
+        name: "BloodCrew",
+        description: "A browser game, built for a LAMP stack, deployed on AWS. Currently being updated to PHP Version 8.2.4",
+        logo: "/assets/BloodCrewLogo.png",
+        // screenshot1: "",
+        // screenshot2: "",
+        // privacyPolicyLink: "",
+        // playStoreLink: "",
+        githubSourceLink: "https://github.com/twadeclark/BloodCrew",
+        shortLogo: "/assets/BloodCrewLogo.png",
+        shortLogoLink: "",
       },
     ],
   }
