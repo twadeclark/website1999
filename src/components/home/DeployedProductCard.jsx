@@ -35,7 +35,7 @@ return (
 
             {value.shortLogo && (
                 <a href={value.shortLogoLink} target="_blank" rel="noopener noreferrer" className="short-logo-link" >
-                    <img src={value.shortLogo} alt="Visit this site directly." />
+                    <img src={value.shortLogo} alt="Visit this site directly." title={name} />
                 </a>
             )}
 
