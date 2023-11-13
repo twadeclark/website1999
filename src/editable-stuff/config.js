@@ -64,7 +64,7 @@ const navBar = {
     imageSize: 375,
     message:
       "My name is Tom Clark. I live in Vancouver, Washington. I've been a print magazine publisher, salesman both in person and cold calling, mortgage broker, account manager. But my true love is software devlopment. Aside from my wife and kids, that is. ",
-    resume: "http://twadeclark.com/",
+    resume: "/assets/TomClark_resume.pdf",
   };
   
   // PROJECTS SECTION
@@ -120,8 +120,8 @@ const navBar = {
         shortLogoLink: "http://twadeclark.com/",
       },
       {
-        name: "BloodCrew",
-        description: "A browser game, built for a LAMP stack, deployed on AWS. Free to play, no email required.",
+         name: "BloodCrew",
+        description: "A MMOTBG (massively multiplayer online text-based browser game) built for a LAMP stack, deployed on AWS. Free to play, no email required.",
         logo: "/assets/BloodCrewLogo.png",
         // screenshot1: "",
         // screenshot2: "",
