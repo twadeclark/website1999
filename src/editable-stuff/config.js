@@ -108,6 +108,16 @@ const navBar = {
         githubSourceLink: "https://github.com/twadeclark/TheJuliaZone",
       },
       {
+        name: "BrainSwiper",
+        description: "Simple flashcard app. Learn anywhere! This Google Play App is free with no registration.",
+        logo: "/assets/BrainSwiperLogo.png", 
+        screenshot1: "/assets/BrainSwiper1.png",
+        screenshot2: "/assets/BrainSwiper2.png",
+        privacyPolicyLink: "/BrainSwiperPrivacyPolicy.txt",
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.twadeclark.brainswiper",
+        githubSourceLink: "https://github.com/twadeclark/BrainSwiper",
+      },
+      {
         name: "Website 1999",
         description: "You're looking at it now. Website 1999 is the codename for this customizable personal website built with React.",
         logo: "/assets/website1999_logo_white_small.png",
