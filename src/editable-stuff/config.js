@@ -63,8 +63,8 @@ const navBar = {
     imageLink: require("../editable-stuff/wisetomowl.png"),
     imageSize: 375,
     message:
-      "My name is Tom Clark. I live in Vancouver, Washington. I've been a print magazine publisher, salesman both in person and cold calling, mortgage broker, account manager. But my true love is software devlopment. Aside from my wife and kids, that is. ",
-    resume: "/assets/TomClark_resume.pdf",
+      "My name is Tom Clark. I live in Vancouver, Washington. I've been a print magazine publisher, salesman both in person and cold calling, mortgage broker, account manager. But my passion is software devlopment.",
+    resume: "/assets/TomClark_Resume.pdf",
   };
   
   // PROJECTS SECTION
@@ -87,6 +87,30 @@ const navBar = {
     heading: "Deployed Products",
 
     localProducts: [
+      {
+        name: "Synthonnel.com",
+        description: "One Prompt, Many LLMs. Enter your question once, see the output from many LLM models on one convenient page.",
+        logo: "/assets/android-chrome-512x512.png",
+        screenshot1: "/assets/synthonnelscreenshot1.png",
+        screenshot2: "/assets/synthonnelscreenshot2.png",
+        // privacyPolicyLink: "/TimestheTimesTablesPrivacyPolicy.txt",
+        // playStoreLink: "https://play.google.com/store/apps/details?id=com.twadeclark.timesthetimestables",
+        githubSourceLink: "https://github.com/twadeclark/RawCircuit",
+        shortLogo: "/assets/android-chrome-512x512.png",
+        shortLogoLink: "https://www.synthonnel.com",
+      },
+      {
+        name: "RawCircuit.click",
+        description: "Artifical Intelligence LLM models discuss current news events among themselves. View their conversations!",
+        logo: "/assets/rawcircuit592_white.png",
+        screenshot1: "/assets/rawcircuitscreenshot2.png",
+        screenshot2: "/assets/rawcircuitscreenshot1.png",
+        // privacyPolicyLink: "/TimestheTimesTablesPrivacyPolicy.txt",
+        // playStoreLink: "https://play.google.com/store/apps/details?id=com.twadeclark.timesthetimestables",
+        githubSourceLink: "https://github.com/twadeclark/RawCircuit",
+        shortLogo: "/assets/rawcircuit592_white.png",
+        shortLogoLink: "https://rawcircuit.click",
+      },
       {
         name: "Times the Times Tables",
         description: "Learn your times tables. Compete with friends! This Google Play App is free with no registration.",
@@ -127,7 +151,7 @@ const navBar = {
         // playStoreLink: "",
         githubSourceLink: "https://github.com/twadeclark/website1999",
         shortLogo: "/assets/wisetomowl.png",
-        shortLogoLink: "http://twadeclark.com/",
+        shortLogoLink: "https://twadeclark.com/",
       },
       {
          name: "BloodCrew",
@@ -139,7 +163,7 @@ const navBar = {
         // playStoreLink: "",
         githubSourceLink: "https://github.com/twadeclark/BloodCrew",
         shortLogo: "/assets/BloodCrewLogo.png",
-        shortLogoLink: "http://bloodcrew.twadeclark.com",
+        shortLogoLink: "https://bloodcrew.twadeclark.com",
       },
       {
         name: "TailWindTrader",
@@ -186,6 +210,7 @@ const navBar = {
     show: true,
     heading: "Skills",
     hardSkills: [
+      { name: "Python", value: 95 },
       { name: "C# / .NET (Visual Studio)", value: 90 },
       { name: "Java (IntelliJ)", value: 85 },
       { name: "Mobile Apps (Android Studio)", value: 90 },

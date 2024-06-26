@@ -19,7 +19,7 @@ return (
     <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
 
     <Card.Body className="d-flex flex-column">
-    <div className="d-flex align-items-start mb-3"> {/* Add margin-bottom for spacing */}
+    <div className="d-flex align-items-start mb-3">
         <Card.Img 
             src={logo} 
             style={{ 
@@ -32,29 +32,29 @@ return (
         <div>
             <Card.Title as="h5">{name}</Card.Title>
             <Card.Text>{description}</Card.Text>
-
-            {value.shortLogo && (
-                <a href={value.shortLogoLink} target="_blank" rel="noopener noreferrer" className="short-logo-link" >
-                    <img src={value.shortLogo} alt="Visit this site directly." title={name} />
-                </a>
-            )}
-
-            {value.playStoreLink && (
-                <a href={value.playStoreLink} target="_blank" rel="noopener noreferrer" className="playstore-link">
-                    <img src="/assets/google-play-badge.png" alt="Get it on Google Play" className="app-icon" />
-                </a>
-            )}
-
-            {value.githubSourceLink && (
-                <a href={value.githubSourceLink} target="_blank" rel="noopener noreferrer" className="github-link">
-                    <img src="/assets/github-mark.png" alt="GitHub Logo" className="github-icon" />
-                    github repo
-                </a>
-            )}
-
         </div>
     </div>
-    <div className="d-flex justify-content-between"> {/* Flex container for side-by-side images */}
+
+    <div className="link-container">
+        {value.shortLogoLink && (
+            <a href={value.shortLogoLink} target="_blank" rel="noopener noreferrer" > 
+                <span className="emoji-enlarge">🖥️</span> 
+                <span className="underline">{value.shortLogoLink} </span>
+            </a>
+        )}
+
+        {value.playStoreLink && (
+            <a href={value.playStoreLink} target="_blank" rel="noopener noreferrer" > <img src="/assets/google-play-badge.png" alt="Get it on Google Play" className="app-icon" /> </a>
+        )}
+
+        {value.githubSourceLink && (
+            <div>
+                <a href={value.githubSourceLink} target="_blank" rel="noopener noreferrer"><img src="/assets/github-mark.png" alt="GitHub Logo" className="github-icon" />github repo </a> <br/>
+            </div>
+        )}
+    </div>
+
+    <div className="d-flex justify-content-between">
         {screenshot1 && (
             <Card.Img 
                 src={screenshot1} 
@@ -76,6 +76,7 @@ return (
             />
         )}
     </div>
+
     <div>
         {privacyPolicyLink && (
             <a href={privacyPolicyLink} target="_blank" rel="noopener noreferrer" className="mt-2">

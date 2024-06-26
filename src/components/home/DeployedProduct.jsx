@@ -6,7 +6,7 @@ import DeployedProductCard from "./DeployedProductCard";
 
 const DeployedProduct = ({ heading, localProducts }) => {
   return (
-      <Jumbotron fluid id="projects" className="bg-light m-0">
+      <Jumbotron fluid id="deployedProduct" className="bg-light m-0">
           <Container className="">
               <h2 className="display-4 pb-5 text-center">{heading}</h2>
               <Row>
